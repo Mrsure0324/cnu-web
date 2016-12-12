@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+/*
+	全局设置
+*/
+
+/*轮播图*/
+#bannerLunBoTu {
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+#list {
+	width: 7980px;
+	height: 400px;
+	position: absolute;
+}
+
+#list .banner {
+	width: 1140px;
+	height: 400px;
+	display: block;
+	float: left;
+}
+
+#list #banner1 {
+	background: url(../images/banner1.jpg) no-repeat center center;
+}
+
+#list #banner2 {
+	background: url(../images/banner2.jpg) no-repeat center center;
+}
+
+#list #banner3 {
+	background: url(../images/banner3.jpg) no-repeat center center;
+}
+
+#list #banner4 {
+	background: url(../images/banner4.jpg) no-repeat center center;
+}
+
+#list #banner5 {
+	background: url(../images/banner5.jpg) no-repeat center center;
+}
+
+#list #banner11 {
+	background: url(../images/banner1.jpg) no-repeat center center;
+}
+
+#list #banner55 {
+	background: url(../images/banner5.jpg) no-repeat center center;
+}
+
+#bannerLunBoTu .banner .bannerTitle {
+	margin-left: 40px;
+	position: absolute;
+	bottom: 40px;
+	color: #fff;
+	
+	
+}
+
+/*切换按钮组*/
+#lunButtons {
+	width: 100px;
+	height: 10px;
+	position: absolute;
+	bottom: 20px;
+	left: 530px;
+}
+
+#lunButtons span {
+	width: 10px;
+	height: 10px;
+	background: #666;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	float: left;
+	margin-right: 10px;
+	cursor:pointer;
+}
+
+#lunButtons span.on {
+	background: #fff;
+}
+
+/*轮播图左右箭头*/
+.arrow {
+	width: 50px;
+	height: 50px;
+	display: none;
+	position: absolute;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0);
+	font-size: 36px;
+	color: #666;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	font-weight: bold;
+	top: 180px;
+}
+
+
+
+#prev {
+	left: 20px;
+}
+
+#next {
+	right: 20px;
+}
+
+#bannerLunBoTu:hover .arrow {
+	display: block;
+}
+
+.arrow:hover {
+	color: #fff;
+}
+
+/*每日精选*/
+#selected {
+	position: relative;
+
+}
+
+#selected li
+
+
+#day h2 {
+	font-size: 28px;
+}
+
+#day .date {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	left: -90px;
+	border-radius: 10px;
+	padding: 12px 4px;
+	border: 1px solid #ccc;
+	font-size: 20px;
+	font-weight: 100;
+	color: #ccc;
+	line-height: 22px;
+	text-align: center;
+	float: left;
+
+}
+
+/*解决li高度塌陷*/
+.clearfix:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+/*图片右侧内容区*/
+#selected li {
+	margin-top: 20px;
+}
+
+#selected .thumnail {
+	display: block;
+	float: left;
+}
+
+
+.workContent {
+	padding-left: 20px;
+	
+	height: 280px;
+	float: left;
+	
+}
+
+.hotRank .workCover {
+	background: #000;
+}
+
+.workContent .workType {
+	background: #ff7f7f;
+	color: #fff;
+	border-radius: 6px;
+	display: block;
+	height: 20px;
+	width: 40px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.workContent h3 {
+	color: #000;
+	margin-top: 20px;
+}
+
+.workContent .workBody {
+	max-height: 40px;
+	overflow: hidden;
+}
+
+.workContent .workBody p{
+	line-height: 20px;
+	color: #808080;
+}
+
+.workContent .authorInfo {
+	margin-top: 40px;
+}
+
+.workContent .authorInfo .author {
+	color: #888;
+}
+
+.workContent .authorInfo .author img {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	margin-right: 6px;
+}
+
+/* 最热图片 */
+.rightTitle {
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.hotRank {
+	padding-left: 40px;
+	margin-top: 20px;
+}
+
+.thumbnail {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.hotRank .workCover img {
+	opacity: 0.8;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.hotRank a:hover img {
+	opacity: 1;
+}
+
+/*加载更多按钮*/
+.button {
+	color: #222;
+	border: 1px solid #222;
+	background: #fff;
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin: 10px 0 40px;
+}
+
+.button:hover {
+	background: #222;
+	color: #fff;
+}
+
+/*24小时翻转效果*/
+.forward{
+	position: absolute;
+	transition:all 1s;
+}
+
+.forward-inner:hover .forward{
+	transform:rotateY(-180deg);
+}
+
+.forward-inner .forward,.back{
+	transform-style:preserve-3d;
+	backface-visibility:hidden;
+}
+
+.forward-inner .back {
+	width: 112px;
+	height: 112px;
+	background: #666;
+	transform:rotateY(180deg);
+	transition:all 1s; 
+
+}
+
+.forward-inner .back p {
+	margin-left: 26px;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 14px;
+
+}
+
+.forward-inner .back img {
+	width: 60px;
+	height: 60px;
+	margin-left: 26px;
+	margin-top: 10px;
+	border-radius: 50px;
+	border: 1px solid #ccc;
+}
+
+.forward-inner:hover .back{
+	transform:rotateY(0deg);
+}

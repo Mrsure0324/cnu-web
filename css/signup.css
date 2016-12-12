@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+
+
+/*背景图片*/
+#particles-js {
+	top: 50px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #222;
+	background-image: url("../images/xk.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+/*登录表单容器*/
+.frontimage {
+	padding-top: 0px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.frontimage .login_form {
+	padding: 50px 0 10px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.frontimage .login_form .slogan {
+    margin: 80px auto 0px;
+    width: 216px;
+    height: 160px;
+    background: url("../images/reglogo.png") no-repeat;
+    z-index: 3;
+    position: relative;
+}
+
+.frontimage .login_form .form-group {
+    margin: 4px auto;
+    width: 280px;
+}
+
+.frontimage .login_form .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.frontimage .login_form .zhuce {
+	width: 100%;
+	border-radius: 0px;
+}
+
+/*注册注释*/
+.frontimage .login_form .declare {
+	margin: 10px auto 10px;
+	width: 240px;
+	line-height: 14px;
+	font-size: 12px;
+	color: #eee;
+}

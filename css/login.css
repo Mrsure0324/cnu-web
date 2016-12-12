@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+
+
+/*背景图片*/
+#particles-js {
+	top: 50px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #222;
+	background-image: url("../images/xk.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+/*登录表单容器*/
+.frontimage {
+	padding-top: 0px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.frontimage .login_form {
+	padding: 50px 0 10px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.frontimage .login_form .slogan {
+    margin: 80px auto 0px;
+    width: 216px;
+    height: 160px;
+    background: url("../images/reglogo.png") no-repeat;
+    z-index: 3;
+    position: relative;
+}
+
+.frontimage .login_form .form-group {
+    margin: 4px auto;
+    width: 280px;
+}
+
+.frontimage .login_form .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.frontimage .login_form .denglu {
+	width: 100%;
+	border-radius: 0px;
+}
+
+.form-group small a{
+	float: right;
+	padding: 10px 0;
+	color: #666;
+	text-decoration: none;
+}
+
+.form-group small a:hover {
+	color: #fff;
+}
+
+.form-group .checkbox {
+	color:#fff;
+	float: left;
+
+}
+
+/*记住我提示框*/
+.form-group .remember_msg{
+	display: none;
+	width: 200px;
+	height: 80px;
+	padding: 20px 10px;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	position: absolute;
+	left: 30%;
+	top: 40%;
+}
+
+/*登录方式*/
+.oauth {
+	text-align: center;
+	margin: 50px auto;
+
+}
+
+.oauth div {
+	display: inline-block;
+}
+
+.oauth a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url("../images/sj.png");
+}
+
+.oauth .weibo a {
+	background-position: 0 0;
+	width: 40px;
+	height: 40px;
+}
+
+.oauth .qq a {
+	background-position: -40px 0px;
+}
+
+.oauth .wechat a {
+	background-position: -80px 0px;
+}

@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CNU</title>
+		<!-- 视口设置 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<!-- IE优化 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 引入bootstrap的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<!-- 判断，如果是IE9以下，引入兼容h5标签的js文件，注意空格的位置 -->
+	
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+	<![end if] -->
+
+	<!-- 引入jquery的js文件 -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- 引入bootstrap的js文件 -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link href="http://img.cnu.cc/assets/images/favicon.ico" rel="shortcut icon">
+</head>
+<body>
+	<!-- 顶部导航开始 -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<!-- 导航头部开始 -->
+		<div class="navbar-header">
+			<!-- 响应式菜单按钮开始 -->
+			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!-- 响应式菜单按钮结束 -->
+			<!-- logo开始 -->
+			<div class="navbar-header">
+				<a href="http//www.cnu.cc" class="navbar-brand" style="padding:0px 20px;">
+					<div id="logo"></div>
+				</a>
+			</div>
+			<!-- logo结束 -->
+		</div>
+		<!-- 导航头部结束 -->	
+
+		<!-- 导航菜单开始 -->
+		<div id="navMenu" class="collapse navbar-collapse">
+
+			<!-- 导航左侧菜单栏开始 -->
+			<ul id="navbar" class="nav navbar-nav">
+				<li>
+					<a href="index.html" class="active">
+						<i class="glyphicon glyphicon-home" style="font-size:16px;"></i>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="ins.html">
+						<i class="glyphicon glyphicon-camera" style="font-size:16px;"></i>
+						<span>灵感</span>
+					</a>
+				</li>
+				<li>
+					<a href="original.html">
+						<i class="glyphicon glyphicon-star-empty" style="font-size:16px;"></i>
+						<span>攻略</span>
+					</a>
+				</li>
+			</ul>
+			<!-- 搜索框开始 -->
+			<form class="navbar-form navbar-right visible-md-block visible-lg-block" style="margin-right:30px;">
+				<div class="form-group">
+					<input type="search" class="form-control" placeholder="请输入搜索关键字" style="background-color:#666;border-color:#666;color:#eee;">
+					<input type="submit" class="btn btn-success" value="搜索" style="background-color:#666;border-color: #666;">
+				</div>
+			</form>
+			<!-- 搜索框结束 -->
+			<!-- 右侧菜单开始 -->
+			<ul id="navRight" class="nav navbar-nav navbar-right">
+				
+				<li class="dropdown active publishBtn">
+					<a href="#" class="dropdown-toggle" id="dropdownMenu1"  data-toggle="dropdown">
+						投稿
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">原创图集</a></li>
+						<li><a href="#">原创教程</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="signup.html">注册</a>
+				</li>
+				<li>
+					<a href="login.html">登录</a>
+				</li>
+			</ul>
+			<!-- 右侧菜单结束 -->
+			<!-- 导航左侧菜单栏结束 -->
+			
+		</div>
+		<!-- 导航菜单结束 --> 
+		
+
+	</nav>
+	<!-- 顶部导航结束 -->
+	<!-- Banner开始 -->
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+
+				<!-- banner轮播图开始 -->
+			<div id="bannerLunBoTu">
+				<!-- 图片列表开始 -->
+				<div id="list" style="left:-1140px;">
+					<!-- 替身图 -->
+					<div class="banner" id="banner55"></div>			
+					<div class="banner" id="banner1">
+						<div class="bannerTitle">
+							<h2>Louis Hvejsel Bork | 迷离夜色</h2>
+						</div>
+					</div>
+					<div class="banner" id="banner2">
+						<div class="bannerTitle">
+							<h2>Ernst Haas | NYC</h2>
+						</div>
+					</div>
+					<div class="banner" id="banner3">
+						<div class="bannerTitle">
+							<h2>Marta Bevacqua 人像摄影作品 【Migle】</h2>
+						</div>
+					</div>
+					<div class="banner" id="banner4">
+						<div class="bannerTitle">
+							<h2>Asher Moss 时尚摄影作品</h2>
+						</div>
+					</div>
+					<div class="banner" id="banner5"></div>
+					<!-- 替身图 -->
+					<div class="banner" id="banner11">
+						<div class="bannerTitle">
+							<h2>Louis Hvejsel Bork | 迷离夜色</h2>
+						</div>
+					</div>			
+				</div>
+				<!-- 图片列表结束 -->
+				<!-- 切换按钮组开始 -->
+				<div id="lunButtons">
+					<span class="on"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- 切换按钮组结束 -->
+				<!-- 左右监听开始 -->
+				<a href="javascript:;" id="prev" class="arrow"><i class="glyphicon glyphicon-circle-arrow-left"></i></a>
+				<a href="javascript:;" id="next" class="arrow"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+				<!-- 左右箭头结束 -->
+			</div>
+			<!-- banner轮播图结束 -->
+				
+			</div>
+		</div>
+
+		
+
+	</div>
+	<!-- Banner结束 -->
+	<!-- 主内容部分开始 -->
+	<div class="container pc">
+
+
+		<div class="row">
+
+			<!-- 每日精选外容器开始 -->
+			<div class="col-lg-8 col-md-8 col-sm-12" id="day">
+				<h2 class="ulTitle">每日精选</h2>
+				<!-- 每日精选开始 -->
+				<ul class="selectedUL pc" id="selected">
+					<div class="date">2016-11-05</div>
+					<hr>
+					<!-- 每日精选模块开始 -->
+					<li class="bannerLi clearfix" width="100%">
+						<!-- 图片 -->
+						<a href="#" class="workCover thumnail">
+							<img src="images/day-1.jpg" alt="Sebastian Erras,巴黎街头的商店">
+						</a>
+
+						<!-- 图片右侧内容区开始 -->
+						<div class="workContent">
+
+							<span class="workType">杂志</span>
+							<a href="#">
+								<h3>Sebastian Erras,巴黎街头的商店</h3>
+							</a>
+							<div class="workBody">
+								<p>
+									摄影师Sebastian Erras作品
+								</p>
+								<br>
+							</div>
+							<div class="authorInfo">
+								<a href="#" class="author">
+									<img src="images/user-1.jpg" alt="">
+									blank
+								</a>
+							</div>
+
+							
+						</div>
+						<!-- 图片右侧内容区结束 -->
+
+					</li>
+					<!-- 每日精选模块结束 -->
+					<!-- 每日精选模块开始 -->
+					<li class="bannerLi clearfix" width="100%">
+						<!-- 图片 -->
+						<a href="#" class="workCover thumnail">
+							<img src="images/day-2.jpg" alt="Sebastian Erras,巴黎街头的商店">
+						</a>
+
+						<!-- 图片右侧内容区开始 -->
+						<div class="workContent">
+
+							<span class="workType">杂志</span>
+							<a href="#">
+								<h3>Sebastian Erras,巴黎街头的商店</h3>
+							</a>
+							<div class="workBody">
+								<p>
+									摄影师Sebastian Erras作品
+								</p>
+								<br>
+							</div>
+							<div class="authorInfo">
+								<a href="#" class="author">
+									<img src="images/user-1.jpg" alt="">
+									blank
+								</a>
+							</div>
+
+							
+						</div>
+						<!-- 图片右侧内容区结束 -->
+
+					</li>
+					<!-- 每日精选模块结束 -->
+					
+				</ul>
+				<!-- 每日精选结束 -->
+				<!-- 每日精选开始 -->
+				<ul class="selectedUL pc" id="selected">
+					<div class="date">2016-11-04</div>
+					<hr>
+					<!-- 每日精选模块开始 -->
+					<li class="bannerLi clearfix" width="100%">
+						<!-- 图片 -->
+						<a href="#" class="workCover thumnail">
+							<img src="images/day-3.jpg" alt="Sebastian Erras,巴黎街头的商店">
+						</a>
+
+						<!-- 图片右侧内容区开始 -->
+						<div class="workContent">
+
+							<span class="workType">杂志</span>
+							<a href="#">
+								<h3>Sebastian Erras,巴黎街头的商店</h3>
+							</a>
+							<div class="workBody">
+								<p>
+									摄影师Sebastian Erras作品
+								</p>
+								<br>
+							</div>
+							<div class="authorInfo">
+								<a href="#" class="author">
+									<img src="images/user-2.jpg" alt="">
+									陈井年_
+								</a>
+							</div>
+
+							
+						</div>
+						<!-- 图片右侧内容区结束 -->
+
+					</li>
+					<!-- 每日精选模块结束 -->
+					<!-- 每日精选模块开始 -->
+					<li class="bannerLi clearfix" width="100%">
+						<!-- 图片 -->
+						<a href="#" class="workCover thumnail">
+							<img src="images/day-4.jpg" alt="Sebastian Erras,巴黎街头的商店">
+						</a>
+
+						<!-- 图片右侧内容区开始 -->
+						<div class="workContent">
+
+							<span class="workType">原创</span>
+							<a href="#">
+								<h3>Sebastian Erras,巴黎街头的商店</h3>
+							</a>
+							<div class="workBody">
+								<p>
+									摄影师Sebastian Erras作品
+								</p>
+								<br>
+							</div>
+							<div class="authorInfo">
+								<a href="#" class="author">
+									<img src="images/user-3.jpg" alt="">
+									killerjson
+								</a>
+							</div>
+
+							
+						</div>
+						<!-- 图片右侧内容区结束 -->
+
+					</li>
+					<!-- 每日精选模块结束 -->
+					
+				</ul>
+				<!-- 每日精选结束 -->
+				<!-- 每日精选开始 -->
+				<ul class="selectedUL pc" id="selected">
+					<div class="date">2016-11-03</div>
+					<hr>
+					<!-- 每日精选模块开始 -->
+					<li class="bannerLi clearfix" width="100%">
+						<!-- 图片 -->
+						<a href="#" class="workCover thumnail">
+							<img src="images/day-5.jpg" alt="Sebastian Erras,巴黎街头的商店">
+						</a>
+
+						<!-- 图片右侧内容区开始 -->
+						<div class="workContent">
+
+							<span class="workType">杂志</span>
+							<a href="#">
+								<h3>Sebastian Erras,巴黎街头的商店</h3>
+							</a>
+							<div class="workBody">
+								<p>
+									摄影师Sebastian Erras作品
+								</p>
+								<br>
+							</div>
+							<div class="authorInfo">
+								<a href="#" class="author">
+									<img src="images/user-4.jpg" alt="">
+									Regiess
+								</a>
+							</div>
+
+							
+						</div>
+						<!-- 图片右侧内容区结束 -->
+
+					</li>
+					<!-- 每日精选模块结束 -->
+					<!-- 每日精选模块开始 -->
+					<li class="bannerLi clearfix" width="100%">
+						<!-- 图片 -->
+						<a href="#" class="workCover thumnail">
+							<img src="images/day-6.jpg" alt="Sebastian Erras,巴黎街头的商店">
+						</a>
+
+						<!-- 图片右侧内容区开始 -->
+						<div class="workContent">
+
+							<span class="workType">杂志</span>
+							<a href="#">
+								<h3>Sebastian Erras,巴黎街头的商店</h3>
+							</a>
+							<div class="workBody">
+								<p>
+									摄影师Sebastian Erras作品
+								</p>
+								<br>
+							</div>
+							<div class="authorInfo">
+								<a href="#" class="author">
+									<img src="images/user-5.jpg" alt="">
+									Mark lee
+								</a>
+							</div>
+
+							
+						</div>
+						<!-- 图片右侧内容区结束 -->
+
+					</li>
+					<!-- 每日精选模块结束 -->
+					
+				</ul>
+				<!-- 每日精选结束 -->
+				<!-- 每日精选开始 -->
+				<ul class="selectedUL pc" id="selected">
+					<div class="date">2016-11-01</div>
+					<hr>
+					<!-- 每日精选模块开始 -->
+					<li class="bannerLi clearfix" width="100%">
+						<!-- 图片 -->
+						<a href="#" class="workCover thumnail">
+							<img src="images/day-7.jpg" alt="Sebastian Erras,巴黎街头的商店">
+						</a>
+
+						<!-- 图片右侧内容区开始 -->
+						<div class="workContent">
+
+							<span class="workType">原创</span>
+							<a href="#">
+								<h3>Sebastian Erras,巴黎街头的商店</h3>
+							</a>
+							<div class="workBody">
+								<p>
+									摄影师Sebastian Erras作品
+								</p>
+								<br>
+							</div>
+							<div class="authorInfo">
+								<a href="#" class="author">
+									<img src="images/user-5.jpg" alt="">
+									Mark lee
+								</a>
+							</div>
+
+							
+						</div>
+						<!-- 图片右侧内容区结束 -->
+
+					</li>
+					<!-- 每日精选模块结束 -->
+					<!-- 每日精选模块开始 -->
+					<li class="bannerLi clearfix" width="100%">
+						<!-- 图片 -->
+						<a href="#" class="workCover thumnail">
+							<img src="images/day-8.jpg" alt="Sebastian Erras,巴黎街头的商店">
+						</a>
+
+						<!-- 图片右侧内容区开始 -->
+						<div class="workContent">
+
+							<span class="workType">原创</span>
+							<a href="#">
+								<h3>Sebastian Erras,巴黎街头的商店</h3>
+							</a>
+							<div class="workBody">
+								<p>
+									摄影师Sebastian Erras作品
+								</p>
+								<br>
+							</div>
+							<div class="authorInfo">
+								<a href="#" class="author">
+									<img src="images/user-1.jpg" alt="">
+									black
+								</a>
+							</div>
+
+							
+						</div>
+						<!-- 图片右侧内容区结束 -->
+
+					</li>
+					<!-- 每日精选模块结束 -->
+					
+				</ul>
+				<!-- 每日精选结束 -->
+				<!-- 每日精选开始 -->
+				<ul class="selectedUL pc" id="selected">
+					<div class="date">2016-10-31</div>
+					<hr>
+					<!-- 每日精选模块开始 -->
+					<li class="bannerLi clearfix" width="100%">
+						<!-- 图片 -->
+						<a href="#" class="workCover thumnail">
+							<img src="images/day-9.jpg" alt="Sebastian Erras,巴黎街头的商店">
+						</a>
+
+						<!-- 图片右侧内容区开始 -->
+						<div class="workContent">
+
+							<span class="workType">杂志</span>
+							<a href="#">
+								<h3>Sebastian Erras,巴黎街头的商店</h3>
+							</a>
+							<div class="workBody">
+								<p>
+									摄影师Sebastian Erras作品
+								</p>
+								<br>
+							</div>
+							<div class="authorInfo">
+								<a href="#" class="author">
+									<img src="images/user-1.jpg" alt="">
+									blank
+								</a>
+							</div>
+
+							
+						</div>
+						<!-- 图片右侧内容区结束 -->
+
+					</li>
+					<!-- 每日精选模块结束 -->
+					<!-- 每日精选模块开始 -->
+					<li class="bannerLi clearfix" width="100%">
+						<!-- 图片 -->
+						<a href="#" class="workCover thumnail">
+							<img src="images/day-10.jpg" alt="Sebastian Erras,巴黎街头的商店">
+						</a>
+
+						<!-- 图片右侧内容区开始 -->
+						<div class="workContent">
+
+							<span class="workType">原创</span>
+							<a href="#">
+								<h3>Sebastian Erras,巴黎街头的商店</h3>
+							</a>
+							<div class="workBody">
+								<p>
+									摄影师Sebastian Erras作品
+								</p>
+								<br>
+							</div>
+							<div class="authorInfo">
+								<a href="#" class="author">
+									<img src="images/user-2.jpg" alt="">
+									blank
+								</a>
+							</div>
+
+							
+						</div>
+						<!-- 图片右侧内容区结束 -->
+
+					</li>
+					<!-- 每日精选模块结束 -->
+					
+				</ul>
+				<!-- 每日精选结束 -->
+				
+				<!-- 加载更多按钮开始 -->
+				<a href="#" id="loadMore" class="loadMore button">
+					加载更多
+				</a>
+				<!-- 加载更多按钮结束 -->
+
+			</div>
+			<!-- 每日精选外容器结束 -->
+			<!-- 24小时最热外部容器开始 -->
+			<div class="col-lg-4 col-md-4 hotRank">
+
+				<!-- 24标题开始 -->
+				<h3 class="rightTitle">
+					24小时最热
+				</h3>
+				<!-- 24标题结束 -->
+				<!-- 最热图片区开始 -->
+				<div class="rows">
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-1.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-1.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-2.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-1.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-3.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-1.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-4.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-1.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-5.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-1.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-6.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-1.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-7.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-7.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-8.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-3.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-9.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-1.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-10.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-2.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-11.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-5.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/hot-12.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-6.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+				</div>
+				<!-- 最热图片区结束 -->
+				
+			</div>
+			<!-- 24小时最热外部容器结束 -->
+			<!-- 24小时最新外部容器开始 -->
+			<div class="col-lg-4 col-md-4 hotRank">
+
+				<!-- 24标题开始 -->
+				<h3 class="rightTitle">
+					24小时最新
+				</h3>
+				<!-- 24标题结束 -->
+				<!-- 最热图片区开始 -->
+				<div class="rows">
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward ">
+							<img src="images/new-1.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-6.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-2.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-1.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-3.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-5.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-4.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-7.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-5.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-2.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-6.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-4.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-7.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-3.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-8.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-6.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-9.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-4.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-10.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-3.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-11.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-2.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+					<div class="thumbnail col-lg-4 col-sm-2 col-xs-4 forward-inner">
+						<a href="#" class="workCover thumbnail forward">
+							<img src="images/new-12.jpg" alt="">
+						</a>
+						<div class="back">
+							<img src="images/user-1.jpg" alt="">
+							<p>作者：blank</p>
+						</div>
+					</div>
+				</div>
+				<!-- 最热图片区结束 -->
+				
+			</div>
+			<!-- 24小时最新外部容器结束 -->
+			<!-- 引力商店开始 -->
+			<div class="col-lg-4 col-md-4 thumbnail ad" style="padding:30px 15px 0 40px">
+				<img src="images/yinli.jpg" alt="">
+			</div>
+			<!-- 引力商店结书 -->
+			
+		</div>
+		
+		
+	</div>
+	<!-- 主内容部分结束 -->
+	<!-- 右侧悬浮框开始 -->
+	<div id="asideTools">
+
+		<ul>
+			<li class="item service">
+				<a href="#">
+					<span class="title-tips">在线咨询</span>
+				</a>
+			</li>
+			<li  class="item feedback">
+				<a href="#">
+					<span class="title-tips">意见反馈</span>
+				</a>
+			</li>
+			<li  class="item wechat">
+				<a href="#">
+					<span class="title-tips">扫一扫</span>
+				</a>
+			</li>
+			<li  class="item backtoTop" id="backtoTop" style="display:list-item;">
+				<a href="#">
+					
+				</a>
+			</li>
+		</ul>
+		
+	</div>
+	<!-- 右侧悬浮框结束 -->
+	<!-- 网页底部开始 -->
+	<div class="pageFooter">
+		<span>@CNU视觉联盟( www.cnu.cc )</span>
+	</div>
+	<!-- 网页底部结束 -->
+
+
+
+	<script type="text/javascript" src="js/index.js"></script>
+
+
+</body>
+</html>

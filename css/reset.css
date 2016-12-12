@@ -1,0 +1,38 @@
+/*全局reset设置*/
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, img, dl, dt, dd, table, th, td, blockquote, fieldset, div, strong, label, em {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ul, ol, li {
+	list-style-type: none;
+}
+input, button {
+	margin: 0;
+	font-size: 12px;
+	/*vertical-align: middle;*/
+}
+body {
+	font-size: 12px;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	color: #333;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #c00;
+	text-decoration: none;
+	text-decoration: none;
+}
+a:hover {
+	color: #c00;
+	text-decoration: none;
+	text-decoration: none;
+}

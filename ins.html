@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>灵感-CNU视觉联盟</title>
+		<!-- 视口设置 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<!-- IE优化 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 引入bootstrap的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<!-- 判断，如果是IE9以下，引入兼容h5标签的js文件，注意空格的位置 -->
+	
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+	<![end if] -->
+
+	<!-- 引入jquery的js文件 -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- 引入bootstrap的js文件 -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link href="http://img.cnu.cc/assets/images/favicon.ico" rel="shortcut icon">
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Link 瀑布流的CSS文件 -->
+ 	<link rel="stylesheet" href="css/include.css">
+ 	<link type="text/css" rel="stylesheet" href="css/colorbox.css">
+ 	<!-- svg loading 图片 -->
+ 	<link rel="stylesheet" href="css/loading.css">
+ 	<link rel="stylesheet" href="css/ins.css">
+</head>
+<body>
+	<!-- 顶部导航开始 -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<!-- 导航头部开始 -->
+		<div class="navbar-header">
+			<!-- 响应式菜单按钮开始 -->
+			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!-- 响应式菜单按钮结束 -->
+			<!-- logo开始 -->
+			<div class="navbar-header">
+				<a href="http//www.cnu.cc" class="navbar-brand" style="padding:0px 20px;">
+					<div id="logo"></div>
+				</a>
+			</div>
+			<!-- logo结束 -->
+		</div>
+		<!-- 导航头部结束 -->	
+
+		<!-- 导航菜单开始 -->
+		<div id="navMenu" class="collapse navbar-collapse">
+
+			<!-- 导航左侧菜单栏开始 -->
+			<ul id="navbar" class="nav navbar-nav">
+				<li>
+					<a href="index.html" class="active">
+						<i class="glyphicon glyphicon-home" style="font-size:16px;"></i>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="ins.html">
+						<i class="glyphicon glyphicon-camera" style="font-size:16px;"></i>
+						<span>灵感</span>
+					</a>
+				</li>
+				<li>
+					<a href="original.html">
+						<i class="glyphicon glyphicon-star-empty" style="font-size:16px;"></i>
+						<span>攻略</span>
+					</a>
+				</li>
+			</ul>
+			<!-- 搜索框开始 -->
+			<form class="navbar-form navbar-right visible-md-block visible-lg-block" style="margin-right:30px;">
+				<div class="form-group">
+					<input type="search" class="form-control" placeholder="请输入搜索关键字" style="background-color:#666;border-color:#666;color:#eee;">
+					<input type="submit" class="btn btn-success" value="搜索" style="background-color:#666;border-color: #666;">
+				</div>
+			</form>
+			<!-- 搜索框结束 -->
+			<!-- 右侧菜单开始 -->
+			<ul id="navRight" class="nav navbar-nav navbar-right">
+				
+				<li class="dropdown active publishBtn">
+					<a href="#" class="dropdown-toggle" id="dropdownMenu1"  data-toggle="dropdown">
+						投稿
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">原创图集</a></li>
+						<li><a href="#">原创教程</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="signup.html">注册</a>
+				</li>
+				<li>
+					<a href="login.html">登录</a>
+				</li>
+			</ul>
+			<!-- 右侧菜单结束 -->
+			<!-- 导航左侧菜单栏结束 -->
+			
+		</div>
+		<!-- 导航菜单结束 --> 
+	</nav>
+	<!-- 顶部导航结束 -->
+	<!-- 主内容区开始 -->
+
+	<div class="container">
+		<!-- banner区域开始 -->
+		<div class="banner row">
+
+			<!-- banner左端导航列表开始 -->
+			<div class="col-lg-3">
+				<div class=" banner-left banner-item">
+					<a href="#"><h2>最新</h2></a>
+					<a href="#"><h3>热门</h3></a>
+					<hr>
+					<div class="all">
+						<a href="#" class="category">
+							<h4><span class="badge">全部</span></h4>
+						</a>
+					</div>
+					<!-- 菜单开始 -->
+					<div class="group">
+						<a href="#" class="category"><span>时尚大片</span></a>
+						<a href="#" class="category"><span>时装发布</span></a>
+						<a href="#" class="category"><span>潮流趋势</span></a>
+					</div>
+					<div class="group">
+						<a href="#" class="category"><span>时尚摄影</span></a>
+						<a href="#" class="category"><span>婚纱摄影</span></a>
+						<a href="#" class="category"><span>广告摄影</span></a>
+					</div>
+					<div class="group">
+						<a href="#" class="category"><span>人像摄影</span></a>
+						<a href="#" class="category"><span>人文摄影</span></a>
+						<a href="#" class="category"><span>风光摄影</span></a>
+						<a href="#" class="category"><span>生态摄影</span></a>
+						<a href="#" class="category"><span>观念摄影</span></a>
+					</div>
+					<div class="group">
+						<a href="#" class="category"><span>当代艺术</span></a>
+						<a href="#" class="category"><span>插画设计</span></a>
+						<a href="#" class="category"><span>平面设计</span></a>
+					</div>
+					<!-- 菜单结束 -->
+
+				</div>
+			</div>
+			<!-- banner左端导航列表结束 -->
+			<!-- banner右侧轮播图开始 -->
+			<div class="col-lg-9 banner-right banner-item">
+				<div class="lunbotu">
+					<!-- Swiper 开始-->
+				    <div class="swiper-container gallery-top">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide" style="background-image:url(images/lg-banner1.jpg)">
+				            	<div class="title-contant">
+				            		<h2>《Modern Lady》秋冬时装大片 | 摄影 AKI LEEN</h2>
+				            	</div>
+				            </div>
+				            <div class="swiper-slide" style="background-image:url(images/lg-banner2.jpg)">
+				            	<div class="title-contant">
+				            		<h2>优秀街头摄影作品选</h2>
+				            	</div>
+				            </div>
+				            <div class="swiper-slide" style="background-image:url(images/lg-banner3.jpg)">
+				            	<div class="title-contant">
+				            		<h2>Eugenia Loli | 超现实主义拼贴</h2>
+				            	</div>
+				            </div>
+				            <div class="swiper-slide" style="background-image:url(images/lg-banner4.jpg)">
+				            	<div class="title-contant">
+				            		<h2>不加修饰的美｜ Leo Berne人像摄影</h2>
+				            	</div>
+				            </div>
+				            <div class="swiper-slide" style="background-image:url(images/lg-banner5.jpg)"></div>
+				            
+				        </div>
+				        <!-- Add Arrows -->
+				        <div class="swiper-button-next swiper-button-white"></div>
+				        <div class="swiper-button-prev swiper-button-white"></div>
+				    </div>
+				    <div class="swiper-container gallery-thumbs">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide" style="background-image:url(images/lg-banner1.jpg)"></div>
+				            <div class="swiper-slide" style="background-image:url(images/lg-banner2.jpg)"></div>
+				            <div class="swiper-slide" style="background-image:url(images/lg-banner3.jpg)"></div>
+				            <div class="swiper-slide" style="background-image:url(images/lg-banner4.jpg)"></div>
+				            <div class="swiper-slide" style="background-image:url(images/lg-banner5.jpg)"></div>
+				        </div>
+				    </div>
+    <!-- Swiper结束 -->
+				</div>
+			</div>
+			<!-- banner右侧轮播图结束 -->
+
+		</div>
+		<!-- banner区域结束 -->
+		<!-- banner下方图片瀑布流开始 -->
+
+		<div class="row">
+			
+			<div id="main" role="main">
+
+			      <ul id="tiles">
+			        <!-- These are our grid blocks -->
+			        <li>
+			        	<div class="mask">
+			        		<span>
+                            	Matthieu Zellweger 摄影作品
+                            </span>
+			        	</div>
+			        	<a href="images/lg-01.jpg"><img src="images/lg-01.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-02.jpg"><img src="images/lg-02.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-03.jpg"><img src="images/lg-03.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-04.jpg"><img src="images/lg-04.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-05.jpg"><img src="images/lg-05.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-06.jpg"><img src="images/lg-06.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-07.jpg"><img src="images/lg-07.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-08.jpg"><img src="images/lg-08.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-09.jpg"><img src="images/lg-09.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-10.jpg"><img src="images/lg-10.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-11.jpg"><img src="images/lg-11.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-12.jpg"><img src="images/lg-12.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-13.jpg"><img src="images/lg-13.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-14.jpg"><img src="images/lg-14.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-15.jpg"><img src="images/lg-15.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-16.jpg"><img src="images/lg-16.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-17.jpg"><img src="images/lg-17.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-18.jpg"><img src="images/lg-18.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-19.jpg"><img src="images/lg-19.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        	<div class="mask">
+			        		<span>
+			        			Matthieu Zellweger 摄影作品
+			        		</span>
+			        	</div>
+			        	<a href="images/lg-20.jpg"><img src="images/lg-20.jpg" width="280"></a>
+			        </li>
+			        <li>
+			        
+			        <!-- End of grid blocks -->
+			      </ul>
+
+		    </div>
+
+		</div>
+		<!-- banner下方图片瀑布流结束 -->
+		<!-- 加载更多按钮开始 -->
+			<a href="javascript:void(0);" id="loadMore" class="loadMore button">
+				<svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			         <g id="circle" class="g-circles g-circles--v1">
+			            <circle id="12" transform="translate(35, 16.698730) rotate(-30) translate(-35, -16.698730) " cx="35" cy="16.6987298" r="10"></circle>
+			            <circle id="11" transform="translate(16.698730, 35) rotate(-60) translate(-16.698730, -35) " cx="16.6987298" cy="35" r="10"></circle>
+			            <circle id="10" transform="translate(10, 60) rotate(-90) translate(-10, -60) " cx="10" cy="60" r="10"></circle>
+			            <circle id="9" transform="translate(16.698730, 85) rotate(-120) translate(-16.698730, -85) " cx="16.6987298" cy="85" r="10"></circle>
+			            <circle id="8" transform="translate(35, 103.301270) rotate(-150) translate(-35, -103.301270) " cx="35" cy="103.30127" r="10"></circle>
+			            <circle id="7" cx="60" cy="110" r="10"></circle>
+			            <circle id="6" transform="translate(85, 103.301270) rotate(-30) translate(-85, -103. 301270) " cx="85" cy="103.30127" r="10"></circle>
+			            <circle id="5" transform="translate(103.301270, 85) rotate(-60) translate(-103.301270, -85) " cx="103.30127" cy="85" r="10"></circle>
+			            <circle id="4" transform="translate(110, 60) rotate(-90) translate(-110, -60) " cx="110" cy="60" r="10"></circle>
+			            <circle id="3" transform="translate(103.301270, 35) rotate(-120) translate(-103.301270, -35) " cx="103.30127" cy="35" r="10"></circle>
+			            <circle id="2" transform="translate(85, 16.698730) rotate(-150) translate(-85, -16.698730) " cx="85" cy="16.6987298" r="10"></circle>
+			            <circle id="1" cx="60" cy="10" r="10"></circle>
+			        </g>
+
+			        <use xlink:href="#circle" class="use"/>
+			    </svg>
+				<span style="font-size:14px;">点击加载更多</span>
+			</a>
+		<!-- 加载更多按钮结束 -->
+		<!-- 右侧悬浮框开始 -->
+		<div id="asideTools">
+
+			<ul>
+				<li class="item service">
+					<a href="#">
+						<span class="title-tips">在线咨询</span>
+					</a>
+				</li>
+				<li  class="item feedback">
+					<a href="#">
+						<span class="title-tips">意见反馈</span>
+					</a>
+				</li>
+				<li  class="item wechat">
+					<a href="#">
+						<span class="title-tips">扫一扫</span>
+					</a>
+				</li>
+				<li  class="item backtoTop" id="backtoTop" style="display:list-item;">
+					<a href="#"></a>
+				</li>
+			</ul>
+			
+		</div>
+		<!-- 右侧悬浮框结束 -->
+
+		
+	</div>
+
+	<!-- 主内容区结束 -->
+	
+	<!-- 网页底部开始 -->
+	<div class="pageFooter">
+		<span>@CNU视觉联盟( www.cnu.cc )</span>
+	</div>
+	<!-- 网页底部结束 -->
+
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- 引入瀑布流插件 -->
+	<script src="js/jquery.wookmark.min.js"></script>
+	<!-- 单机模态层 -->
+	<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+	<!-- 引入swiper插件 -->
+	<script src="js/swiper.js"></script>
+	
+
+	<script type="text/javascript">
+
+		/*
+					swiper
+		*/
+		var galleryTop = new Swiper('.gallery-top', {
+			effect : 'fade',
+			fade: {
+			  crossFade: false,
+			},
+		    nextButton: '.swiper-button-next',
+		    prevButton: '.swiper-button-prev',
+		    spaceBetween: 0,
+		    autoplay:5000,
+		   	autoplayDisableOnInteraction : true,
+		    loop:true,
+		    loopedSlides: 5, //looped slides should be the same     
+		});
+		var galleryThumbs = new Swiper('.gallery-thumbs', {
+		    spaceBetween: 5,
+		    slidesPerView: 5,
+		    touchRatio: 0.5,
+		    loop:true,
+		    loopedSlides: 5, //looped slides should be the same
+		    slideToClickedSlide: true
+		});
+		galleryTop.params.control = galleryThumbs;
+		galleryThumbs.params.control = galleryTop;
+
+		/*
+			瀑布流
+		*/
+		(function ($){
+
+			var handler = $('#tiles li');
+		  
+			handler.wookmark({
+		      // Prepare layout options.
+		      autoResize: true, // This will auto-update the layout when the browser window is resized.
+		      container: $('#main'), // Optional, used for some extra CSS styling
+		      offset: 0, // Optional, the distance between grid items
+		      outerOffset: 0, // Optional, the distance to the containers border
+		      itemWidth: 230 ,// Optional, the width of a grid item
+		      flexibleWidth: 285
+		  });
+
+			// 点击图片显示模态图
+		    $('a', handler).colorbox({
+		      rel: 'lightbox'
+		    });
+
+		})(jQuery);
+
+
+	</script>
+
+	<!-- ins.js -->
+	<script type="text/javascript" src="js/ins.js"></script>
+
+	
+</body>
+</html>

@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+ 
+	
+/*轮播图*/
+.swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 20px;
+    }
+.swiper-container .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 700px;
+    height: 400px;
+
+}
+
+.swiper-container .swiper-wrapper .title-contant {
+	position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+
+.swiper-container .swiper-wrapper .title-contant h2 {
+	color: #fff;
+    text-align: center;
+}
+
+/*无间断滚动*/
+#slider h2 {
+    margin: 15px 0px;
+}
+
+#slider-box {
+    height: 100px;
+    border:1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    margin: 0px auto;
+    overflow: hidden;
+    /*overflow: scroll;*/
+}
+
+#slider-box #silder-wrapper {       
+    width: 300%;            
+    position: relative;
+}
+
+#slider-box #silder-wrapper #slider1 {
+    padding: 0px;
+    position: absolute; 
+}
+
+#slider-box #silder-wrapper #slider1 img {  
+    margin: 5px;        
+    float: left;
+    display: block;
+    width: 90px;
+    width: 90px;
+    
+}
+
+/*主内容部分*/
+.main {
+    margin: 20px 0px;
+    position: relative;
+}
+.main-inner{
+    padding: 0px;
+}
+
+.main-inner .main-warpper{
+    margin: 0 20px 30px 0;
+    background: #f2f2f2;
+    height: 450px;
+}
+
+.main-inner .main-warpper .main-img img{
+    height: 192px;
+}
+
+.main-inner .main-content{
+    padding: 20px;
+}
+
+.main-inner .main-content h4 {
+    color: #4d4d4d;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.main-inner .main-content a{
+    color: #4d4d4d;
+}
+
+.main-inner .main-content .main-line{
+    font-size: 11px;
+    color: #999999;
+    letter-spacing: 1px;
+    margin: 0 0 3px 0;
+    line-height: 20px;
+}
+
+/*分页器*/
+#table1 {
+    font-size: 18px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

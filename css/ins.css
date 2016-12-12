@@ -1,0 +1,216 @@
+@charset "utf-8";
+a{
+	text-decoration: none;
+	overflow: hidden;
+	display: block;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+/*banner容器*/
+.banner {
+	margin-top: 70px;
+}
+
+.banner .banner-item {
+    height: 500px;
+}
+
+.banner .banner-left {
+    padding: 0 20px 20px;
+    background-color: #f7f8fa;
+    margin: 5px 5px 5px;
+    height: 500px;
+}
+
+.banner .banner-left h2{
+    color: red;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.banner .banner-left h3 {
+	color: #444;
+}
+
+.banner .banner-left .all .category {
+    width: 100px;
+    display: inline-block;
+    font-size: 14px;
+    color: #444;
+}
+
+.banner .banner-left .all .category .badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.banner .banner-left .group {
+    padding: 10px 0 10px 7px;
+}
+
+.banner .banner-left .category {
+    width: 100px;
+    display: inline-block;
+    font-size: 14px;
+    color: #444;
+}
+
+.banner .banner-left .category:hover{
+    color: #888;
+}
+
+/*banner右侧轮播图*/
+.banner .banner-right {
+    margin-top: 5px;
+}
+
+.banner .banner-right .lunbotu {
+}
+
+.banner .banner-right .lunbotu .swiper-container {
+    width: 100%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner .banner-right .lunbotu .swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.banner .banner-right .lunbotu .gallery-top {
+    width: 100%;
+}
+.banner .banner-right .lunbotu .gallery-thumbs {
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.banner .banner-right .lunbotu .gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+    position: relative;
+}
+
+@keyframes move {
+    0% {
+        opacity:0.4;
+        background-size: 100% 100%
+    }
+
+    100% {
+        opacity:0.9;
+        background-size: 120% 120%
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        opacity:0.4;
+        background-size: 100% 100%
+    }
+
+    100% {
+        opacity:0.9;
+        background-size: 130% 130%
+    }
+}
+
+
+.banner .banner-right .lunbotu .gallery-thumbs .swiper-slide:hover{
+    animation:move 0.5s forwards;
+    -webkit-animation:move 0.5s forwards;
+}
+
+.banner .banner-right .lunbotu .gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+
+.banner .banner-right .lunbotu .swiper-container .swiper-slide .title-contant {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+
+.banner .banner-right .lunbotu .swiper-container .swiper-slide .title-contant h2 {
+    color: #fff;
+    text-align: center;
+}
+
+/*banner下瀑布流*/
+#main {
+    padding: 0px 15px;
+}
+
+#tiles {
+    margin-left: 5px;
+}
+
+#tiles li {
+    border:none;
+    padding: 0;
+    margin-right: 10px;
+    position: relative;
+}
+
+#tiles li img {
+    margin: 0 10px 5px 0;
+}
+
+/*瀑布流图片遮罩层*/
+#tiles li .mask {
+    width: 280px;
+    height: 0px;
+    background: rgba(0,0,0,0.5);            
+    color:rgba(255,255,255,0);
+    text-align: center;
+    line-height: 0px;
+    position: absolute;
+    bottom: 5px;
+
+    transition:all 1s;
+}
+
+#tiles li:hover .mask {
+    height: 50px;
+    color: rgba(255,255,2550,1);
+    line-height: 50px;
+}
+
+/*加载更多按钮*/
+.button {
+    color: #222;
+    border: 1px solid #222;
+    background: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0 40px;
+}
+
+.button:hover {
+    background: #222;
+    color: #fff;
+}
+
+
+
+/*加载图片*/
+#loadMore img {
+    margin: 0 auto;
+}
